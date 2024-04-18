@@ -38,13 +38,5 @@ namespace NodeCanvas.Tasks.Actions {
                 pipeRenderer.material = material;
             }
 		}
-
-		protected override void OnStop() {
-			
-		}
-
-		protected override void OnPause() {
-			
-		}
 	}
 }

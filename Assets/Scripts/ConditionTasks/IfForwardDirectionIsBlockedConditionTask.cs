@@ -22,8 +22,16 @@ namespace NodeCanvas.Tasks.Conditions {
 		}
 
 		protected override bool OnCheck() {
-			Ray fowardRay = new Ray(agent.transform.position, agent.transform.forward * 3);
 			Debug.DrawLine(agent.transform.position, agent.transform.forward * 3, Color.red);
+			Ray fowardRay = new Ray(agent.transform.position, agent.transform.forward * 3);
+			RaycastHit hit;
+			if(Physics.Raycast(fowardRay, out hit, 3)){
+				Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
+				if(hit.collider.CompareTag("Barrier")){
+					Debug.Log("Hit object with tag 'Barrier': " + hit.collider.gameObject.name);
+					return true;
+				}
+			}
 			return false;
 		}
 	}

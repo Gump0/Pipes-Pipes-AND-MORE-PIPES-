@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8594600896529227532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 252614688769006450}
+  - component: {fileID: 5990007254165846539}
+  - component: {fileID: 8225259942426111915}
+  - component: {fileID: 5207786117402046400}
+  m_Layer: 0
+  m_Name: Pipe-Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &252614688769006450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594600896529227532}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5990007254165846539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594600896529227532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad115aca74ce3c4891b3f6de0b4aae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"policy":1,"_position":{"x":790.5,"y":129.0},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"0"},{"_action":{"changeDirCheck":{"_name":"changeDirCheck","_targetVariableID":"0965c074-0881-47ee-a06e-045fbc6c1f1e"},"$type":"NodeCanvas.Tasks.Actions.CheckForwardDirection"},"_position":{"x":386.5,"y":449.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"pipePrefab":1,"pipeMatList":[2,3,4],"$type":"NodeCanvas.Tasks.Actions.MoveActionTask"},"_position":{"x":765.4927,"y":455.5777},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"},{"_condition":{"changeDirCheck":{"_name":"changeDirCheck","_targetVariableID":"0965c074-0881-47ee-a06e-045fbc6c1f1e"},"$type":"NodeCanvas.Tasks.Conditions.OnChangeDirTrue"},"_position":{"x":975.2599,"y":351.0207},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"3"},{"_position":{"x":232.0711,"y":325.891},"$type":"NodeCanvas.BehaviourTrees.Sequencer"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 3715988980631008492, guid: 10cc68e8cab1d83e3a447228e1fb33e0, type: 3}
+  - {fileID: 2100000, guid: 18644dd1aef94e7368744d3ffc593258, type: 2}
+  - {fileID: 2100000, guid: d8842c54dcede4033b65e4612d5f96ff, type: 2}
+  - {fileID: 2100000, guid: c5b12550da95c84f0a8dc5c2b50f8a0c, type: 2}
+  _boundGraphSource:
+    _version: 3.29
+    _category: 
+    _comments: 
+    _translation: {x: -219, y: 52}
+    _zoomFactor: 0.6994228
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 0}
+  _blackboard: {fileID: 8225259942426111915}
+--- !u!114 &8225259942426111915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594600896529227532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{"changeDirCheck":{"_name":"changeDirCheck","_id":"0965c074-0881-47ee-a06e-045fbc6c1f1e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+  _objectReferences: []
+  _serializedVariables:
+  - _json: '{"_name":"changeDirCheck","_id":"0965c074-0881-47ee-a06e-045fbc6c1f1e","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+--- !u!114 &5207786117402046400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594600896529227532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67c4f50570f9e695881ea932bdea0ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRotation: {x: 0, y: 0, z: 0, w: 0}

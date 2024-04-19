@@ -47,17 +47,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"policy":1,"_position":{"x":790.5,"y":129.0},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"0"},{"_action":{"changeDirCheck":{"_name":"changeDirCheck","_targetVariableID":"0965c074-0881-47ee-a06e-045fbc6c1f1e"},"$type":"NodeCanvas.Tasks.Actions.CheckForwardDirection"},"_position":{"x":386.5,"y":449.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"pipePrefabs":[1,2,3],"pipeSpacing":4.0,"generatorSpeed":12.0,"$type":"NodeCanvas.Tasks.Actions.MoveActionTask"},"_position":{"x":765.4927,"y":455.5777},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"},{"_condition":{"changeDirCheck":{"_name":"changeDirCheck","_targetVariableID":"0965c074-0881-47ee-a06e-045fbc6c1f1e"},"$type":"NodeCanvas.Tasks.Conditions.OnChangeDirTrue"},"_position":{"x":975.2599,"y":351.0207},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"policy":1,"_position":{"x":790.5,"y":129.0},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"0"},{"_action":{"changeDirCheck":{"_name":"changeDirCheck","_targetVariableID":"0965c074-0881-47ee-a06e-045fbc6c1f1e"},"$type":"NodeCanvas.Tasks.Actions.CheckForwardDirection"},"_position":{"x":386.5,"y":449.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"pipePrefabs":[1,2],"pipeSpacing":4.0,"generatorSpeed":12.0,"$type":"NodeCanvas.Tasks.Actions.MoveActionTask"},"_position":{"x":765.4927,"y":455.5777},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"},{"_condition":{"changeDirCheck":{"_name":"changeDirCheck","_targetVariableID":"0965c074-0881-47ee-a06e-045fbc6c1f1e"},"$type":"NodeCanvas.Tasks.Conditions.OnChangeDirTrue"},"_position":{"x":975.2599,"y":351.0207},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 3715988980631008492, guid: 10cc68e8cab1d83e3a447228e1fb33e0, type: 3}
   - {fileID: 3715988980631008492, guid: eacf8c6652c979af6b565b70f6036897, type: 3}
-  - {fileID: 3715988980631008492, guid: 8058f297e4c1aad248ef80dc21d4accf, type: 3}
   _boundGraphSource:
     _version: 3.29
     _category: 
     _comments: 
-    _translation: {x: -99.756065, y: 50.93949}
+    _translation: {x: -190, y: 31}
     _zoomFactor: 0.82631963
   _firstActivation: 0
   _enableAction: 0

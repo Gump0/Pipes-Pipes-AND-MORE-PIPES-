@@ -24,13 +24,13 @@ namespace NodeCanvas.Tasks.Actions {
 				zFactor ++;
 			}
 			if(Input.GetKeyDown(KeyCode.A) && xFactor < 16.5){
-				xFactor ++;
+				xFactor --;
 			}
 			if(Input.GetKeyDown(KeyCode.S) && zFactor > -1){
 				zFactor --;
 			}
 			if(Input.GetKeyDown(KeyCode.D) && xFactor > -17){
-				xFactor --;
+				xFactor ++;
 			}
 
 			agent.transform.position = new Vector3(xFactor, agent.transform.position.y, zFactor);

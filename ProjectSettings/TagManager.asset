@@ -8,6 +8,9 @@ TagManager:
   - Pipe
   - Pipe-Generator
   - BallDropper
+  - Pipe1
+  - Pipe2
+  - Pipe3
   layers:
   - Default
   - TransparentFX

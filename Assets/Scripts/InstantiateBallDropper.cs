@@ -17,7 +17,7 @@ public class CheckPipeGenerators : MonoBehaviour
             if(ballDropperPrefab != null && isThereaballDropper == null){
                 Instantiate(ballDropperPrefab, new Vector3(0,12,0), Quaternion.identity);
             } else{
-                Debug.LogWarning("ballDropperPrefab was not found");
+                //Debug.LogWarning("ballDropperPrefab was not found");
             }
         }
     }

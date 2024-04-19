@@ -27,7 +27,7 @@ namespace NodeCanvas.Tasks.Actions {
 					randomRollProc = false;
 					EndAction(true);
 				}
-				if(hit.collider.CompareTag("Pipe")){
+				if(hit.collider.CompareTag("Pipe1") || hit.collider.CompareTag("Pipe2") || hit.collider.CompareTag("Pipe3")){
 					UnityEngine.Object.Destroy(agent.gameObject);
 				}
 			}

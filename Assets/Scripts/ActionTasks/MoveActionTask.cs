@@ -10,15 +10,14 @@ namespace NodeCanvas.Tasks.Actions {
 
 		private SwapPipeGeneratorDirection swapPipeGeneratorDirection;
 
-		public GameObject pipePrefab;
+		public GameObject[] pipePrefabs;
+		private GameObject currentPipe;	
 		public float pipeSpacing = 6f, distanceSinceLastPipe = 0f, generatorSpeed = 8f;
-		public Material[] pipeMatList;
-		private Material currentPipeMaterial;
 		private Vector3 prefabSpawnPoint;
 
 		protected override string OnInit() {
 			swapPipeGeneratorDirection = agent.GetComponent<SwapPipeGeneratorDirection>();
-			currentPipeMaterial = pipeMatList[Random.Range(0, pipeMatList.Length)];
+			currentPipe = pipePrefabs[Random.Range(0, pipePrefabs.Length)];
 			return null;
 		}
 
@@ -29,8 +28,7 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnUpdate() {
 			distanceSinceLastPipe = Vector3.Distance(agent.transform.position, prefabSpawnPoint);
 			if(distanceSinceLastPipe >= pipeSpacing){
-				GameObject newPipe = UnityEngine.Object.Instantiate(pipePrefab, agent.transform.position, swapPipeGeneratorDirection.currentRotation);
-				ApplyMaterialToPipe(newPipe, currentPipeMaterial);
+				GameObject newPipe = UnityEngine.Object.Instantiate(currentPipe, agent.transform.position, swapPipeGeneratorDirection.currentRotation);
 				pipeSpacing = 0f;
 			}
 			agent.transform.Translate(Vector3.forward * generatorSpeed * Time.deltaTime);

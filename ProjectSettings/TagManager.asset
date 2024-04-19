@@ -7,6 +7,7 @@ TagManager:
   - Barrier
   - Pipe
   - Pipe-Generator
+  - BallDropper
   layers:
   - Default
   - TransparentFX

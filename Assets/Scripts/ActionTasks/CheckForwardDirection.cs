@@ -27,6 +27,9 @@ namespace NodeCanvas.Tasks.Actions {
 					randomRollProc = false;
 					EndAction(true);
 				}
+				if(hit.collider.CompareTag("Pipe")){
+					UnityEngine.Object.Destroy(agent.gameObject);
+				}
 			}
 			RollRandomTurnChance();
 		}
